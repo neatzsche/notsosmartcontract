@@ -1,0 +1,22 @@
+html
+  head
+    h1 Guess the correct number to become the owner of the contract
+  body
+    button#deployContract(onclick='deployLottery()') Deploy Contract
+    br
+    |         Contract Address:
+    div
+      span#contractAddress .
+    input#guess(type='text')
+    button#sendGuess(onclick='sendGuess()') sendGuess
+    br
+    |         Contract Owner:
+    div
+      span#owner .
+    br
+    button#check(onclick='checkContract()') Check Contract
+    div
+      span#flag flag
+    script(src='/javascripts/web3.min.js')
+    script(src='/javascripts/lottery.js')
+    script(src='/javascripts/jquery.js')

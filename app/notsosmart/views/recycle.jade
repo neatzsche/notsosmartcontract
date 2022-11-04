@@ -1,0 +1,25 @@
+html
+  head
+    h1 Steal eth from the contract to become owner of the contract
+  body
+    button#deployContract(onclick='deployRecycle()') Deploy Contract
+    br
+    |         Contract Address:
+    div
+      span#contractAddress .
+    button#checkBalance(onclick='checkBalance()') Check Balance
+    br
+    |         Contract Owner:
+    div
+      span#owner .
+    br
+    |         Contract Balance:
+    div
+      span#balance .
+    br
+    button#check(onclick='checkContract()') Check Contract
+    div
+      span#flag flag
+    script(src='/javascripts/web3.min.js')
+    script(src='/javascripts/recycle.js')
+    script(src='/javascripts/jquery.js')

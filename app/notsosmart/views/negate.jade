@@ -1,0 +1,29 @@
+html
+  head
+    h1 Get the most shares to become the owner of the contract
+  body
+    button#deployContract(onclick='deployNegate()') Deploy Contract
+    br
+    |         Contract Address:
+    div
+      span#contractAddress .
+    br
+    input#amount(type='text', placeholder='amount')
+    input#sendTo(type='text', placeholder='sendToAddress')
+    button#sendToken(onclick='sendToken()') sendToken
+    br
+    |         Tokens:
+    div
+      span#tokens .
+    br
+    br
+    |         Contract Owner:
+    div
+      span#owner .
+    br
+    button#check(onclick='checkContract()') Check Contract
+    div
+      span#flag flag
+    script(src='/javascripts/web3.min.js')
+    script(src='/javascripts/negate.js')
+    script(src='/javascripts/jquery.js')

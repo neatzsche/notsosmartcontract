@@ -1,0 +1,10 @@
+html
+  head
+    h1 Report a Contract to the Admin
+  body
+    input#contract(type='text', placeholder='Contract Address')
+    input#id(type='text', placeholder='Token ID')
+    input#network(type='text', placeholder='Network')
+    button#sendToken(onclick='sendReport()') Send Report
+    script(src='/javascripts/report.js')
+    script(src='/javascripts/jquery.js')
