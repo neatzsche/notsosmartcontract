@@ -1,9 +1,10 @@
-#Not So Smart Contract
-##Negate:
+# Not So Smart Contract
+
+## Negate:
 Integer Overflow
-##Lottery:
+## Lottery:
 Bad Randomness
-##Recycle:
+## Recycle:
 Reentrancy
-##Viewnft
+## Viewnft
 XSS
